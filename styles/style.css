@@ -32,13 +32,13 @@
 /* TODO: Replace these Google Fonts with the ones you want to use on your site. */
 /* Remember, the more fonts you load, the longer it can take for your page to load. */
 
-/* Eczar Font (for headers or special text) */
+/* Grand Hotel Font (for headers or special text) */
 @import url("https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap");
 
-/* Rubik Font (clean and modern for body text) */
+/* Glass Antiqua Font (clean and modern for body text) */
 @import url("https://fonts.googleapis.com/css2?family=Glass+Antiqua&display=swap");
 
-/* Inter Font (great for readability and minimal design) */
+/* Poiret One Font (great for readability and minimal design) */
 @import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
 
 /*
@@ -57,9 +57,6 @@
 /* ------------------------------- */
 
 /* TODO: Delete any stylesheets you don't plan to use on your site. */
-
-/* File for animation effects that make elements move (e.g., flying) */
-@import url("make-something-fly.css");
 
 /* File for animation effects that make elements blink */
 @import url("make-something-blink.css");
@@ -105,24 +102,24 @@
 
 :root {
   /* Typography */
-  --font-family-body: "Inter", sans-serif;
-  --font-family-heading: "Eczar", serif;
-  --font-family-project-title: "Eczar", serif;
+  --font-family-body: "Glass Antiqua", cursive;
+  --font-family-heading: "Grand Hotel";
+  --font-family-project-title: "Grand Hotel";
   /* Core Colours */
   --color-text-primary: #222;
   --color-text-secondary: #333;
-  --color-accent-primary: #6021ea;
-  --color-accent-secondary: #58c7f7;
+  --color-accent-primary: #86f5d3;
+  --color-accent-secondary: #86f5d3;
   --color-overlay-primary: rgba(82, 0, 255, 0.5);
   --color-highlight: lemonchiffon;
   --color-fallback: #ff057c; /* Fallback color for glitch effect on 404 page */
   /* Backgrounds */
   --color-bg: #fdfdfd;
-  --color-bg-about: #f5f5f5;
-  --color-bg-footer: #f5f5f5;
+  --color-bg-about: #c7e5f2;
+  --color-bg-footer: #c7e5f2;
   --color-bg-holding-page: rgba(82, 0, 255, 0.6);
   /* Headings */
-  --h1-color: #5200ff;
+  --h1-color: #61edca;
   --h2-color: #5200ff;
   --h3-color: #5200ff;
   --h4-color: #5200ff;
@@ -454,7 +451,7 @@ svg {
 
 h1 {
   font-size: 2.2rem;
-  font-family: "Grand Hotel";
+  font-family: var(--font-family-heading);
   line-height: 1.2;
   margin-bottom: 1rem;
   color: var(--h1-color);
@@ -462,13 +459,14 @@ h1 {
 
 h2 {
   font-size: 2rem;
-  font-family: "Glass Antiqua";
+  font-family: var(--font-family-heading);
   line-height: 1.2;
   margin-bottom: 1rem;
   color: var(--h2-color);
 }
 
 h3 {
+  font-family: var(--font-family-heading);
   font-size: 1.325rem;
   margin-bottom: 1rem;
   line-height: 1.2;
@@ -476,6 +474,7 @@ h3 {
 }
 
 h4 {
+  font-family: var(--font-family-heading);
   font-size: 1.2rem;
   line-height: 1.2;
   margin-bottom: 1rem;
@@ -579,6 +578,7 @@ sup {
 /* 🏷️ Project category label — displays the type or role of the project */
 .work-grid-project-category {
   color: var(--color-text-project-category);
+  font-family: var(--font-family-heading);
 }
 
 /*
