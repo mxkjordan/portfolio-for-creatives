@@ -108,23 +108,23 @@
   /* Core Colours */
   --color-text-primary: #222;
   --color-text-secondary: #333;
-  --color-accent-primary: #e5e7e8;
+  --color-accent-primary: #161616;
   --color-accent-secondary: #e5e7e8;
   --color-overlay-primary: rgba(82, 0, 255, 0.5);
   --color-highlight: lemonchiffon;
   --color-fallback: #ff057c; /* Fallback color for glitch effect on 404 page */
   /* Backgrounds */
-  --color-bg: #ccaada;
-  --color-bg-about: #ccaada;
-  --color-bg-footer: #ccaada;
+  --color-bg: #ffffff;
+  --color-bg-about: #ffffff;
+  --color-bg-footer: #ffffff;
   --color-bg-holding-page: rgba(82, 0, 255, 0.6);
   /* Headings */
-  --h1-color: #e5e7e8;
-  --h2-color: #e5e7e8;
-  --h3-color: #e5e7e8;
-  --h4-color: #e5e7e8;
-  --h5-color: #e5e7e8;
-  --h6-color: #e5e7e8;
+  --h1-color: #161616;
+  --h2-color: #161616;
+  --h3-color: #161616;
+  --h4-color: #161616;
+  --h5-color: #161616;
+  --h6-color: #161616;
   /* Special Text Colours */
   --color-text-holding-title: #ebedf0;
   --color-text-project-category: #ffffff;
@@ -137,11 +137,11 @@
   --color-link-hover: #111;
   --color-link-visited: #5200ff;
   /* Navigation */
-  --color-nav-link: #5200ff;
-  --color-nav-link-hover: #321575;
-  --color-nav-arrow: #5200ff;
+  --color-nav-link: #3c3c3c;
+  --color-nav-link-hover: #ef9de8;
+  --color-nav-arrow: #3c3c3c;
   --color-nav-arrow-hover: #000;
-  --color-nav-arrow-stroke: #5200ff;
+  --color-nav-arrow-stroke: #3c3c3c;
   --color-nav-arrow-stroke-hover: #000;
   /* Components */
   --color-bg-full-width: #f5f5f5;
@@ -156,7 +156,7 @@
     #321575 100%
   );
   /* Special Elements */
-  --color-icon-heart: rgb(117, 30, 184);
+  --color-icon-heart: rgb(66, 66, 66);
   --color-text-holding-footer: #f8f8ff;
   --color-bg-selection: #5200ff;
   --color-shadow-stroke: rgba(0, 0, 0, 0.4);
@@ -233,7 +233,7 @@ body {
 
 /* ------------------------------- */
 /* 🖍️ Text Highlight Styles */
-/* This changes the background color when you highlight text (like when you click and drag to select it) */
+/* This changes the ` when you highlight text (like when you click and drag to select it) */
 /* ------------------------------- */
 
 ::selection {
@@ -634,6 +634,7 @@ a:active {
 /* -------------------------------------------------------------------------- */
 
 a.nav-link-primary {
+  font-size: 1.4rem;
   color: var(--color-nav-link);
 }
 a.nav-link-primary:hover {
@@ -730,6 +731,9 @@ a.nav-link-primary:hover {
   justify-content: center;
   padding: var(--padding-small);
   text-align: center; /* Keeps text centered */
+  background: url(../assets/branding-images/pexels-steve-29708307.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero-icon {
@@ -1421,7 +1425,9 @@ to keep your styles reusable and consistent.
     font-size: 1.625rem;
   }
 
-  .h1-full-width,
+  .h1-full-width {
+    font-size: 8rem;
+  }
   .h2-full-width {
     width: 70%;
     padding: var(--padding-small);
