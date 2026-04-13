@@ -133,12 +133,12 @@
   --color-text-project-title: #5200ff;
   --color-text-work-grid-title: #ffffff;
   /* Link States */
-  --color-link: #5200ff;
+  --color-link: #3d3d3d;
   --color-link-hover: #111;
-  --color-link-visited: #5200ff;
+  --color-link-visited: #565656;
   /* Navigation */
   --color-nav-link: #3c3c3c;
-  --color-nav-link-hover: #ef9de8;
+  --color-nav-link-hover: #6dc5ee;
   --color-nav-arrow: #3c3c3c;
   --color-nav-arrow-hover: #000;
   --color-nav-arrow-stroke: #3c3c3c;
@@ -731,7 +731,7 @@ a.nav-link-primary:hover {
   justify-content: center;
   padding: var(--padding-small);
   text-align: center; /* Keeps text centered */
-  background: url(../assets/branding-images/pexels-steve-29708307.jpg);
+  background: url(../assets/branding-images/bg-image-hero-section.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -777,9 +777,7 @@ a.nav-link-primary:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: var(
-    --color-bg-full-width
-  ); /* Background color for full-width sections */
+  background: url(../assets/branding-images/bg-image-hero-section.jpg); /* Background color for full-width sections */
   margin-bottom: 1rem;
 }
 
@@ -1168,7 +1166,6 @@ a.nav-link-primary:hover {
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
-  background: var(--color-bg-project-description);
   padding: var(--padding-small);
   width: 100%;
   margin-bottom: 1rem; /* Space below the description */
@@ -1605,8 +1602,7 @@ to keep your styles reusable and consistent.
 
   /* Column 1: Tagline/Message */
   .footer-tagline {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
+    align-items: center;
   }
 
   /* Column 2: Awards & Works */
