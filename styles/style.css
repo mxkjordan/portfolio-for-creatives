@@ -110,7 +110,7 @@
   --color-text-secondary: #333;
   --color-accent-primary: #161616;
   --color-accent-secondary: #e5e7e8;
-  --color-overlay-primary: rgba(82, 0, 255, 0.5);
+  --color-overlay-primary: rgba(52, 148, 163, 0.651);
   --color-highlight: lemonchiffon;
   --color-fallback: #ff057c; /* Fallback color for glitch effect on 404 page */
   /* Backgrounds */
@@ -289,12 +289,6 @@ svg {
   width: 100%;
 }
 
-/* Adds a dashed border to help you see the box while you're designing */
-.border {
-  border: 1px dashed var(--color-accent-primary); /* This uses your custom accent color */
-  /* TODO: Delete this later – it’s just here to help you see the box while you work */
-}
-
 /* ---------------------- */
 /* ✍️  Typography Helpers */
 /* ---------------------- */
@@ -312,16 +306,6 @@ svg {
 /* ------------------------------ */
 /* 🌀 Animation & Interaction Tools */
 /* ------------------------------ */
-
-/* Smooth transition when applying transformations – improves hover experience */
-.rotate {
-  transition: transform 0.3s ease;
-}
-
-/* Rotates the element slightly on hover – adds a playful effect */
-.rotate:hover {
-  transform: rotate(4deg);
-}
 
 /* ----------------------------- */
 /* 📦 Padding Utilities (Mobile First) */
@@ -1419,7 +1403,7 @@ to keep your styles reusable and consistent.
   }
 
   h3 {
-    font-size: 1.625rem;
+    font-size: 2rem;
   }
 
   .h1-full-width {
@@ -1487,7 +1471,7 @@ to keep your styles reusable and consistent.
   }
 
   .error-404 {
-    font-size: 5rem;
+    font-size: 15rem;
   }
 
   /* Work Page Grid for Large Devices */

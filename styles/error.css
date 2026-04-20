@@ -1,42 +1,12 @@
 /* Error 404 text with gradient and glitch */
 .error-404 {
-  font-size: 2rem;
+  font-size: 8rem;
   background: var(--color-gradient-hero);
   -webkit-background-clip: text;
   background-clip: text;
-  color: transparent; /* Essential for gradient text */
-  -webkit-text-fill-color: transparent; /* Additional WebKit support */
+  color: rgb(128, 118, 159);
   position: relative;
   display: inline-block;
-  animation: glitch 0.3s infinite alternate, flicker 0.2s infinite;
-}
-
-/* Pseudo-elements for RGB splitting */
-.error-404::before,
-.error-404::after {
-  content: "404";
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: var(--color-gradient-hero);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  -webkit-text-fill-color: transparent;
-}
-
-/* Red channel */
-.error-404::before {
-  clip-path: inset(0 66% 0 0);
-  animation: glitch-red 0.4s infinite;
-  transform: translate(-4px, 0);
-}
-
-/* Cyan channel */
-.error-404::after {
-  clip-path: inset(0 0 0 33%);
-  animation: glitch-cyan 0.4s infinite;
-  transform: translate(4px, 0);
 }
 
 /* Glitch animations */
@@ -70,31 +40,5 @@
   25%,
   75% {
     opacity: 0.6;
-  }
-}
-
-@keyframes glitch-red {
-  0%,
-  50% {
-    transform: translate(-4px, 0);
-  }
-  25% {
-    transform: translate(-6px, 2px);
-  }
-  75% {
-    transform: translate(-3px, -1px);
-  }
-}
-
-@keyframes glitch-cyan {
-  0%,
-  50% {
-    transform: translate(4px, 0);
-  }
-  25% {
-    transform: translate(6px, -2px);
-  }
-  75% {
-    transform: translate(3px, 1px);
   }
 }
