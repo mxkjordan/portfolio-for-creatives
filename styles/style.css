@@ -110,7 +110,7 @@
   --color-text-secondary: #333;
   --color-accent-primary: #161616;
   --color-accent-secondary: #e5e7e8;
-  --color-overlay-primary: rgba(52, 148, 163, 0.651);
+  --color-overlay-primary: #6dc5ee;
   --color-highlight: lemonchiffon;
   --color-fallback: #ff057c; /* Fallback color for glitch effect on 404 page */
   /* Backgrounds */
@@ -209,7 +209,7 @@ html {
   box-sizing: border-box; /* Makes sure padding and borders don't add extra width to elements */
   scroll-behavior: smooth; /* Adds smooth scrolling between sections */
   cursor:
-    url("../assets/temp/up-cursor.png"), auto !important; /* Custom cursor (change the URL below to use your own) */
+    url("../assets/temp/arrowhead-rounded-outline.svg"), auto !important; /* Custom cursor (change the URL below to use your own) */
 
   /* TODO: Replace the URL above to add a custom cursor. 
      If you want to use the default browser cursor, just delete this line. */
