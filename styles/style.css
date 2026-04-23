@@ -208,8 +208,6 @@
 html {
   box-sizing: border-box; /* Makes sure padding and borders don't add extra width to elements */
   scroll-behavior: smooth; /* Adds smooth scrolling between sections */
-  cursor:
-    url("../assets/temp/arrowhead-rounded-outline.svg"), auto !important; /* Custom cursor (change the URL below to use your own) */
 
   /* TODO: Replace the URL above to add a custom cursor. 
      If you want to use the default browser cursor, just delete this line. */
@@ -434,7 +432,7 @@ svg {
 /* Heading Styles (h1 - h6) */
 
 h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   font-family: var(--font-family-heading);
   line-height: 1.2;
   margin-bottom: 1rem;
@@ -513,7 +511,7 @@ sup {
 .hero-headline {
   color: var(--color-accent-primary); /* Uses your brand's dominant color */
   /* max-width: 40ch;  */
-  font-size: 20rem;
+  font-size: 5rem;
   /* Optimal line length for readability (~40 characters) */
   /* text-wrap: balance; */
 
@@ -1393,7 +1391,9 @@ to keep your styles reusable and consistent.
   .holding-page-title {
     font-size: 2rem;
   }
-
+  .hero-headline {
+    font-size: 20rem;
+  }
   h1 {
     font-size: 4.275rem;
   }
